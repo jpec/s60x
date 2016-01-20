@@ -31,7 +31,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Fn1 |Gui |Alt |        SpaceFn         |Alt |Gui |App |BTN2|
      * `-----------------------------------------------------------'
      */
-    KEYMAP_ANSI(
+    KEYMAP(
         GRV,  1,    2,    3,    4,    5,    6,    7,    8,    9,    0,    MINS, EQL,  NO,   BSPC, \
         TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, BSLS, \
         LCTL, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  \
@@ -51,7 +51,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |    |    |    |                        |    |    |    |    |
      * `-----------------------------------------------------------'
      */
-    KEYMAP_ANSI(
+    KEYMAP(
         ESC,  F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,   F10,  F11,  F12,  TRNS, DEL,  \
         TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, PGUP, HOME, UP,   END,  PSCR, SLCK, PAUS, INS,  \
         CAPS, VOLD, MUTE, VOLU, TRNS, TRNS, PGDN, LEFT, DOWN, RGHT, TRNS, TRNS, TRNS, PENT, \
