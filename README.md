@@ -45,7 +45,7 @@ To build firmware binary hex file with a certain keymap just do `make` with `KEY
     |-----------------------------------------------------------|
     |Shift   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     |
     |-----------------------------------------------------------|
-    |Fn1 |Gui |Alt |        SpaceFn         |Alt |Gui |App |BTN3|
+    |Fn1 |Gui |Alt |        SpaceFn         |Alt |Gui |App |Ctrl|
     `-----------------------------------------------------------'
 
 
