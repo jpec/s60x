@@ -28,7 +28,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |-----------------------------------------------------------|
      * |Shift   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     |
      * |-----------------------------------------------------------|
-     * |Fn0 |Gui |Alt |        Space           |Alt |Fn1 |App |Ctrl|
+     * |Fn1 |Gui |Alt |        SpaceFn         |Alt |Gui |App |Ctrl|
      * `-----------------------------------------------------------'
      */
     KEYMAP(
@@ -36,7 +36,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, BSLS, \
         LCTL, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  \
         LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO, \
-        FN0,  LGUI, LALT,             SPACE,                        RALT, FN1, APP,  RCTL),
+        FN1,  LGUI, LALT,             FN0,                          RALT, RGUI, APP,  RCTL),
 
     /* Layout 1: Function Layer
      * ,-----------------------------------------------------------.
@@ -63,10 +63,9 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * Fn action definition
  */
 const uint16_t PROGMEM fn_actions[] = {
-  //[0] = ACTION_LAYER_TAP_KEY(1, KC_SPACE),    /* SpaceFn layout 1 */
-  [0] = ACTION_LAYER_MOMENTARY(1),            /* Momentary layout 1 */
-  [1] = ACTION_LAYER_TOGGLE(1),               /* Togle layer */
-  [2] = ACTION_MODS_KEY(MOD_LSFT, KC_DEL),    /* Cut  */
-  [3] = ACTION_MODS_KEY(MOD_LCTL, KC_INS),    /* Copy  */
-  [4] = ACTION_MODS_KEY(MOD_LSFT, KC_INS),    /* Paste */
+    [0] = ACTION_LAYER_TAP_KEY(1, KC_SPACE),    /* SpaceFn layout 1 */
+    [1] = ACTION_LAYER_MOMENTARY(1),            /* Momentary layout 1 */
+    [2] = ACTION_MODS_KEY(MOD_LSFT, KC_DEL),    /* Cut  */
+    [3] = ACTION_MODS_KEY(MOD_LCTL, KC_INS),    /* Copy  */
+    [4] = ACTION_MODS_KEY(MOD_LSFT, KC_INS),    /* Paste */
 };
