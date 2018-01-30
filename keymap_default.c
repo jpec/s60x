@@ -63,7 +63,6 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * Fn action definition
  */
 const uint16_t PROGMEM fn_actions[] = {
-  //[0] = ACTION_LAYER_TAP_KEY(1, KC_SPACE),    /* SpaceFn layout 1 */
   [0] = ACTION_LAYER_MOMENTARY(1),            /* Momentary layout 1 */
   [1] = ACTION_LAYER_TOGGLE(1),               /* Togle layer */
   [2] = ACTION_MODS_KEY(MOD_LSFT, KC_DEL),    /* Cut  */
