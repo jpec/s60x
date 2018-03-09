@@ -34,4 +34,5 @@ To build firmware binary hex file with a certain keymap just do `make` with `KEY
 ### List of keymaps
 
 [keymap_default.c](keymap_default.c) is a keymap designed by Julien Pecqueur.
-[keymap_spacefn.c](keymap_default.c) is a SpaceFn keymap designed by Julien Pecqueur.
+
+[keymap_spacefn.c](keymap_spacefn.c) is a SpaceFn keymap designed by Julien Pecqueur.
